@@ -6,7 +6,7 @@ from google import genai
 # 1. CONFIGURACIÓN GENERAL Y ENLACES
 # =========================================================
 st.set_page_config(
-    page_title="SkillAdapt | Plataforma de Capacitación Adaptativa",
+    page_title="Skillora | Plataforma de Capacitación Adaptativa",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -119,7 +119,7 @@ with st.sidebar:
 
     # Datos dinámicos del alumno (Memoria del sistema)
     st.markdown("**Datos del Estudiante**")
-    nombre_estudiante = st.text_input("Nombre completo:", "Alex Ramos")
+    nombre_estudiante = st.text_input("Nombre completo:", "Alex Cusimayta")
     especialidad = st.selectbox("Especialidad:", opciones_especialidad, index=indice_inicial)
     nivel_dominio = st.select_slider(
         "Nivel actual:",
@@ -173,7 +173,7 @@ def generar_respuesta_ia(cliente, mensaje_usuario: str, instrucciones_sistema: s
 
 # Personalidad y reglas pedagógicas formales de SkillBot
 INSTRUCCIONES_SKILLBOT = f"""
-Eres 'SkillBot', el consultor y tutor especialista en reconversión laboral de la plataforma SkillAdapt.
+Eres 'SkillBot', el consultor y tutor especialista en reconversión laboral de la plataforma Skillora.
 Tu propósito es preparar a los profesionales para el mercado laboral hacia el año 2050.
 
 PERFIL DEL ESTUDIANTE (Memoria activa):
@@ -198,7 +198,7 @@ DIRECTRICES DE COMUNICACIÓN:
 # Encabezado superior (Hero interno)
 st.markdown(f"""
 <div class="encabezado-app">
-    <div class="encabezado-titulo">SkillAdapt — Entorno de Capacitación Adaptativa</div>
+    <div class="encabezado-titulo">Skillora — Entorno de Capacitación Adaptativa</div>
     <div class="encabezado-subtitulo">Desarrollo de competencias estratégicas e inteligencia artificial hacia el 2050</div>
     <span class="etiqueta-modulo">Módulo Activo: {modulo_actual}</span>
 </div>
@@ -219,7 +219,7 @@ with col_perfil:
     """, unsafe_allow_html=True)
 
 with col_valor:
-    st.markdown("#### Metodología SkillAdapt")
+    st.markdown("#### Metodología Skillora")
     st.markdown("""
     <div class="tarjeta-borde-azul">
         <strong>Rutas personalizadas:</strong> Formación enfocada exclusivamente en cerrar brechas técnicas reales sin teoría redundante.
