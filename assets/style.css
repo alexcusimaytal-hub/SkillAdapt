@@ -1,12 +1,12 @@
 /* =========================================================
-   ESTILOS DE LA APLICACIÓN STREAMLIT (SINCRONIZADO CON LANDING)
+   ESTILOS DE LA APLICACIÓN STREAMLIT (ALTO CONTRASTE)
    ========================================================= */
 :root {
     --azul-principal: #2563EB;
     --azul-oscuro: #0F172A;
     --azul-suave: #DBEAFE;
     --fondo-gris: #F8FAFC;
-    --texto-gris: #475569;
+    --texto-gris: #334155;
     --borde: #E2E8F0;
 }
 
@@ -19,10 +19,14 @@ html, body, [class*="css"] {
     background-color: var(--fondo-gris);
 }
 
+/* Forzar color oscuro en títulos y textos nativos de Streamlit */
+.stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp p, .stApp label {
+    color: var(--azul-oscuro) !important;
+}
+
 /* Encabezado principal */
 .encabezado-app {
     background: linear-gradient(135deg, var(--azul-oscuro) 0%, #1E293B 100%);
-    color: #FFFFFF;
     padding: 2rem 2.5rem;
     border-radius: 14px;
     margin-bottom: 1.5rem;
@@ -33,31 +37,37 @@ html, body, [class*="css"] {
     font-size: 1.9rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .encabezado-subtitulo {
     font-size: 1rem;
-    color: #CBD5E1;
+    color: #CBD5E1 !important;
     margin-bottom: 1rem;
 }
 
 .etiqueta-modulo {
     background-color: var(--azul-suave);
-    color: #1D4ED8;
+    color: #1D4ED8 !important;
     padding: 5px 14px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
+    display: inline-block;
 }
 
-/* Tarjetas de contenido */
+/* Tarjetas de contenido con texto oscuro garantizado */
 .tarjeta-blanca {
     background-color: #FFFFFF;
     border: 1px solid var(--borde);
     border-radius: 12px;
     padding: 1.4rem;
-    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+    color: var(--azul-oscuro) !important;
+}
+
+.tarjeta-blanca p, .tarjeta-blanca strong {
+    color: var(--azul-oscuro) !important;
 }
 
 .tarjeta-borde-azul {
@@ -67,13 +77,18 @@ html, body, [class*="css"] {
     border-radius: 8px;
     padding: 1rem 1.2rem;
     margin-bottom: 0.8rem;
+    color: var(--texto-gris) !important;
+}
+
+.tarjeta-borde-azul strong {
+    color: var(--azul-oscuro) !important;
 }
 
 /* Botones de acceso rápido */
 .stButton > button {
-    background-color: #FFFFFF;
-    color: var(--azul-oscuro);
-    border: 1px solid #CBD5E1;
+    background-color: #FFFFFF !important;
+    color: var(--azul-oscuro) !important;
+    border: 1px solid #CBD5E1 !important;
     border-radius: 8px;
     font-weight: 600;
     padding: 0.65rem 1rem;
@@ -82,7 +97,7 @@ html, body, [class*="css"] {
 }
 
 .stButton > button:hover {
-    border-color: var(--azul-principal);
-    color: var(--azul-principal);
-    background-color: #F0F7FF;
+    border-color: var(--azul-principal) !important;
+    color: var(--azul-principal) !important;
+    background-color: #F0F7FF !important;
 }
