@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # URL de tu Landing Page en Netlify (actualízala cuando Netlify te dé tu enlace)
-LANDING_PAGE_URL = "https://tu-proyecto-skilladapt.netlify.app"
+LANDING_PAGE_URL = "https://mellifluous-salamander-fbcf12.netlify.app/"
 
 # =========================================================
 # 2. CARGA DE ESTILOS (ALINEADOS CON LA LANDING PAGE)
