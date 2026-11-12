@@ -1,0 +1,61 @@
+/* Estilos globales y tarjeta estilo SaaS */
+.main {
+    background-color: #F8FAFC;
+}
+
+/* Tarjeta del Hero Section */
+.hero-card {
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #38BDF8;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #94A3B8;
+    margin-bottom: 1rem;
+}
+
+/* Tarjetas del Dashboard de Estudiante */
+.metric-card {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.badge-status {
+    background-color: #E0F2FE;
+    color: #0369A1;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Tarjetas de Propuesta de Valor */
+.value-card {
+    background-color: #FFFFFF;
+    border-left: 4px solid #0284C7;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Botones principales */
+.stButton>button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
